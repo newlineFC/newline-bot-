@@ -1,10 +1,9 @@
 import discord
-import asyncio
-import requests
+import os
 from discord.ext import commands 
 from discord.ext.commands import Bot
 
-DISCORD_BOT_TOKEN = 'NTU4MzgzNDExMjk5ODc2ODc3.D3WCnA.LOOvdRr9QP6CaSiiVQu267_HJKg'
+#NTU4MzgzNDExMjk5ODc2ODc3.D3WCnA.LOOvdRr9QP6CaSiiVQu267_HJKg
 
 #class MyClient(discord.Client):
 
@@ -67,5 +66,4 @@ async def unban(ctx, user: discord.Member):
 
 
 
-
-Bot.run(DISCORD_BOT_TOKEN)
+token = os.environ.get('BOT_TOKEN')
