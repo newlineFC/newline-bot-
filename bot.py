@@ -3,8 +3,6 @@ import os
 from discord.ext import commands 
 from discord.ext.commands import Bot
 
-#NTU4MzgzNDExMjk5ODc2ODc3.D3WCnA.LOOvdRr9QP6CaSiiVQu267_HJKg
-
 #class MyClient(discord.Client):
 
 client = discord.Client()
