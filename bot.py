@@ -3,9 +3,6 @@ import os
 from discord.ext import commands 
 from discord.ext.commands import Bot
 
-#class MyClient(discord.Client):
-
-client = discord.Client()
 Bot = commands.Bot(command_prefix= '!')
 
 @Bot.event
@@ -54,14 +51,6 @@ async def create_role(ctx):
 async def add_role(ctx, user: discord.Member, role: discord.Role):
     """Use to add role"""
     await Bot.add_roles(user, role)
-
-'''
-@Bot.command(pass_context= True)
-async def unban(ctx, user: discord.Member):
-    await Bot.unban(user, ctx.message.server)
-'''
-
-
 
 
 token = os.environ.get('BOT_TOKEN')
